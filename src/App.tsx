@@ -3,7 +3,7 @@ import { useTheme } from './context/ThemeContext'
 import { Main } from './pages/main/Main'
 
 function App() {
-	const { isDark, toggleTheme } = useTheme()
+	const { isDark } = useTheme()
 
 	return (
 		<div className={`app ${isDark ? 'dark' : 'light'}`}>
